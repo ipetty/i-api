@@ -6,7 +6,7 @@ package net.ipetty.vo;
  * @author luocanfeng
  * @date 2014年5月4日
  */
-public class UserFormVO {
+public class UserFormVO extends BaseVO {
 
 	private Integer id;
 	private int uid; // uid
