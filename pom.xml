@@ -31,6 +31,22 @@
 						<showWarnings>true</showWarnings>
 					</configuration>
 				</plugin>
+				<!-- 在 mvn clean 时同时清除 /libs 目录下的 jar 文件 -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-clean-plugin</artifactId>
+					<version>2.5</version>
+					<configuration>
+						<filesets>
+							<fileset>
+								<directory>${basedir}/libs</directory>
+								<includes>
+									<include>**/*.jar</include>
+								</includes>
+							</fileset>
+						</filesets>
+					</configuration>
+				</plugin>
 			</plugins>
 		</pluginManagement>
 		<plugins>
