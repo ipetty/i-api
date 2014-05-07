@@ -1,5 +1,6 @@
 package net.ipetty.sdk;
 
+import net.ipetty.vo.RegisterVO;
 import net.ipetty.vo.UserVO;
 
 /**
@@ -16,9 +17,9 @@ public interface UserApi {
 	public UserVO login(String username, String password);
 
 	/**
-	 * 注册用户
+	 * 注册
 	 */
-	public UserVO register(String email, String password);
+	public UserVO register(RegisterVO register);
 
 	/**
 	 * 检查用户名是否可用，true表示可用，false表示不可用

@@ -2,6 +2,7 @@ package net.ipetty.sdk;
 
 import net.ipetty.sdk.common.ApiContext;
 import net.ipetty.sdk.common.BaseApi;
+import net.ipetty.vo.RegisterVO;
 import net.ipetty.vo.UserVO;
 
 import org.springframework.util.LinkedMultiValueMap;
@@ -38,14 +39,11 @@ public class UserApiImpl extends BaseApi implements UserApi {
 	}
 
 	/**
-	 * 注册用户
+	 * 注册
 	 */
 	@Override
-	public UserVO register(String email, String password) {
-		MultiValueMap<String, String> request = new LinkedMultiValueMap<String, String>();
-		request.set("email", email);
-		request.set("password", password);
-		return context.getRestTemplate().postForObject(buildUri(URI_REGISTER), request, UserVO.class);
+	public UserVO register(RegisterVO register) {
+		return context.getRestTemplate().postForObject(buildUri(URI_REGISTER), register, UserVO.class);
 	}
 
 	/**
