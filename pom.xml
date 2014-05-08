@@ -9,11 +9,11 @@
 		<jdk.version>1.6</jdk.version>
 		<compiler.encoding>UTF-8</compiler.encoding>
 
-		<spring.android.version>1.0.1.RELEASE</spring.android.version>
-		<spring.social.version>1.0.3.RELEASE</spring.social.version>
-		<jackson.version>1.9.13</jackson.version>
+		<!-- <spring.android.version>1.0.1.RELEASE</spring.android.version> -->
+		<!-- <spring.social.version>1.0.3.RELEASE</spring.social.version> -->
+		<!-- <jackson.version>1.9.13</jackson.version> -->
 		<commons-lang3.version>3.3.2</commons-lang3.version>
-		<commons-codec.version>1.9</commons-codec.version>
+		<!-- <commons-codec.version>1.9</commons-codec.version> -->
 	</properties>
 
 	<build>
@@ -73,18 +73,18 @@
 
 	<dependencies>
 		<!-- spring -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework.android</groupId>
 			<artifactId>spring-android-core</artifactId>
 			<version>${spring.android.version}</version>
-		</dependency>
-		<dependency>
+		</dependency> -->
+		<!-- <dependency>
 			<groupId>org.springframework.android</groupId>
 			<artifactId>spring-android-rest-template</artifactId>
 			<version>${spring.android.version}</version>
-		</dependency>
+		</dependency> -->
 		<!-- spring-social -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework.social</groupId>
 			<artifactId>spring-social-core</artifactId>
 			<version>${spring.social.version}</version>
@@ -94,23 +94,23 @@
 					<artifactId>spring-web</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
+		</dependency> -->
 		<!-- jackson -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-core-asl</artifactId>
 			<version>${jackson.version}</version>
-		</dependency>
-		<dependency>
+		</dependency> -->
+		<!-- <dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-mapper-asl</artifactId>
 			<version>${jackson.version}</version>
-		</dependency>
-		<dependency>
+		</dependency> -->
+		<!-- <dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-jaxrs</artifactId>
 			<version>${jackson.version}</version>
-		</dependency>
+		</dependency> -->
 		<!-- commons-lang3 -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -118,11 +118,11 @@
 			<version>${commons-lang3.version}</version>
 		</dependency>
 		<!-- commons-codec -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>commons-codec</groupId>
 			<artifactId>commons-codec</artifactId>
 			<version>${commons-codec.version}</version>
-		</dependency>
+		</dependency> -->
 	</dependencies>
 
 </project>
