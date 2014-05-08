@@ -10,7 +10,7 @@ public class UserFormVO extends BaseVO {
 
 	private Integer id;
 	private int uid; // uid
-	private String account; // 爱宠号
+	private String uniqueName; // 爱宠号
 	private String email; // 邮箱地址
 	private String nickname; // 昵称
 	private String avatar; // 头像

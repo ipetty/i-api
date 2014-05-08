@@ -10,7 +10,7 @@ public class UserVO extends BaseVO {
 
 	private Integer id;
 	private int uid; // uid
-	private String account; // 爱宠号
+	private String uniqueName; // 爱宠号
 	private String email; // 邮箱地址
 	private String nickname; // 昵称
 	private String avatar; // 头像
@@ -34,12 +34,12 @@ public class UserVO extends BaseVO {
 		this.uid = uid;
 	}
 
-	public String getAccount() {
-		return account;
+	public String getUniqueName() {
+		return uniqueName;
 	}
 
-	public void setAccount(String account) {
-		this.account = account;
+	public void setUniqueName(String uniqueName) {
+		this.uniqueName = uniqueName;
 	}
 
 	public String getEmail() {
