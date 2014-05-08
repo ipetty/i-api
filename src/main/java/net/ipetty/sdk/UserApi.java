@@ -26,4 +26,24 @@ public interface UserApi {
 	 */
 	public boolean checkEmailAvailable(String email);
 
+	/**
+	 * 根据ID获取用户帐号
+	 */
+	public UserVO getById(Integer id);
+
+	/**
+	 * 根据uid获取用户帐号
+	 */
+	public UserVO getByUid(int uid);
+
+	/**
+	 * 根据爱宠号获取用户帐号
+	 */
+	public UserVO getByUniqueName(String uniqueName);
+
+	/**
+	 * 更新爱宠号
+	 */
+	public boolean updateUniqueName(Integer id, String uniqueName);
+
 }
