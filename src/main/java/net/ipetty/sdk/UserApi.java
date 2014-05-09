@@ -42,7 +42,7 @@ public interface UserApi {
 	public UserVO getByUniqueName(String uniqueName);
 
 	/**
-	 * 更新爱宠号
+	 * 设置爱宠号，只能设置一次，一经设置不能变更
 	 */
 	public boolean updateUniqueName(Integer id, String uniqueName);
 
