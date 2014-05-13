@@ -3,6 +3,8 @@ package net.ipetty.sdk;
 import java.util.Date;
 import java.util.List;
 
+import net.ipetty.vo.CommentVO;
+import net.ipetty.vo.FeedFavorVO;
 import net.ipetty.vo.FeedFormVO;
 import net.ipetty.vo.FeedVO;
 
@@ -39,5 +41,20 @@ public interface FeedApi {
 	 *            分页页码，从0开始
 	 */
 	public List<FeedVO> listByTimelineForHomePage(Date timeline, int pageNumber, int pageSize);
+
+	/**
+	 * 评论
+	 */
+	public FeedVO comment(CommentVO comment);
+
+	/**
+	 * 赞
+	 */
+	public FeedVO favor(FeedFavorVO favor);
+
+	/**
+	 * 取消赞
+	 */
+	public FeedVO unfavor(FeedFavorVO favor);
 
 }
