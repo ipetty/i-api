@@ -46,4 +46,24 @@ public interface UserApi {
 	 */
 	public boolean updateUniqueName(Integer id, String uniqueName);
 
+	/**
+	 * 修改密码
+	 */
+	public boolean changePassword(Integer id, String oldPassword, String newPassword);
+
+	/**
+	 * 关注
+	 */
+	public boolean follow(Integer friendId, Integer followerId);
+
+	/**
+	 * 是否已关注，true为已关注，false为未关注
+	 */
+	public boolean isFollow(Integer friendId, Integer followerId);
+
+	/**
+	 * 取消关注
+	 */
+	public boolean unfollow(Integer friendId, Integer followerId);
+
 }
