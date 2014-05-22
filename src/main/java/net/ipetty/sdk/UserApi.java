@@ -44,26 +44,36 @@ public interface UserApi {
 	/**
 	 * 设置爱宠号，只能设置一次，一经设置不能变更
 	 */
-	public boolean updateUniqueName(Integer id, String uniqueName);
+	public boolean updateUniqueName(String uniqueName);
 
 	/**
 	 * 修改密码
 	 */
-	public boolean changePassword(Integer id, String oldPassword, String newPassword);
+	public boolean changePassword(String oldPassword, String newPassword);
 
 	/**
 	 * 关注
 	 */
-	public boolean follow(Integer friendId, Integer followerId);
+	public boolean follow(Integer friendId);
 
 	/**
 	 * 是否已关注，true为已关注，false为未关注
 	 */
-	public boolean isFollow(Integer friendId, Integer followerId);
+	public boolean isFollow(Integer friendId);
 
 	/**
 	 * 取消关注
 	 */
-	public boolean unfollow(Integer friendId, Integer followerId);
+	public boolean unfollow(Integer friendId);
+
+	/**
+	 * 更新用户头像
+	 */
+	public String updateAvatar(String imagePath);
+
+	/**
+	 * 更新个人空间背景图片
+	 */
+	public String updateBackground(String imagePath);
 
 }
