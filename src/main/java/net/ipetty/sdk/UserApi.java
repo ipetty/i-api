@@ -15,6 +15,11 @@ public interface UserApi {
 	 * 用户登陆验证
 	 */
 	public UserVO login(String username, String password);
+	
+	/**
+	 * 用户登出
+	 */
+	public void logout();
 
 	/**
 	 * 登出
