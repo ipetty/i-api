@@ -17,6 +17,11 @@ public interface UserApi {
 	public UserVO login(String username, String password);
 
 	/**
+	 * 登出
+	 */
+	public void logout();
+
+	/**
 	 * 注册
 	 */
 	public UserVO register(RegisterVO register);
