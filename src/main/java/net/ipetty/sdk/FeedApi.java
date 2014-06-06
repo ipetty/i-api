@@ -27,6 +27,11 @@ public interface FeedApi {
 	public FeedVO getById(Long id);
 
 	/**
+	 * 删除消息
+	 */
+	public boolean delete(Long id);
+
+	/**
 	 * 根据时间线分页获取消息（广场）
 	 * 
 	 * @param pageNumber
@@ -46,6 +51,11 @@ public interface FeedApi {
 	 * 评论
 	 */
 	public FeedVO comment(CommentVO comment);
+
+	/**
+	 * 删除评论
+	 */
+	public boolean deleteComment(Long id);
 
 	/**
 	 * 赞
