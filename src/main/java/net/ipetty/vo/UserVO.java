@@ -17,6 +17,11 @@ public class UserVO extends BaseVO {
 	private String gender; // 性别
 	private String stateAndRegion; // 地区
 	private String signature; // 个性签名
+	private boolean followed; // 是否已关注
+
+	public UserVO() {
+		super();
+	}
 
 	public Integer getId() {
 		return id;
@@ -88,6 +93,14 @@ public class UserVO extends BaseVO {
 
 	public void setSignature(String signature) {
 		this.signature = signature;
+	}
+
+	public boolean isFollowed() {
+		return followed;
+	}
+
+	public void setFollowed(boolean followed) {
+		this.followed = followed;
 	}
 
 }
