@@ -1,5 +1,7 @@
 package net.ipetty.sdk;
 
+import java.util.List;
+
 import net.ipetty.vo.RegisterVO;
 import net.ipetty.vo.UserVO;
 
@@ -70,6 +72,30 @@ public interface UserApi {
 	 * 取消关注
 	 */
 	public boolean unfollow(Integer friendId);
+
+	/**
+	 * 分页获取关注列表
+	 * 
+	 * @param pageNumber
+	 *            分页页码，从0开始
+	 */
+	public List<UserVO> listFriends(Integer userId, int pageNumber, int pageSize);
+
+	/**
+	 * 获取粉丝列表
+	 * 
+	 * @param pageNumber
+	 *            分页页码，从0开始
+	 */
+	public List<UserVO> listFollowers(Integer userId, int pageNumber, int pageSize);
+
+	/**
+	 * 获取好友列表（双向关注）
+	 * 
+	 * @param pageNumber
+	 *            分页页码，从0开始
+	 */
+	public List<UserVO> listBiFriends(Integer userId, int pageNumber, int pageSize);
 
 	/**
 	 * 更新用户头像
