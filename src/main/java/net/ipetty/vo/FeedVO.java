@@ -17,7 +17,11 @@ public class FeedVO extends BaseVO {
 	private Date createdOn;
 
 	private String text; // 文本内容
-	private Long imageId; // 图片ID，图片不会修改，客户端缓存起来，一直从缓存获取
+
+	// private Long imageId; // 图片ID，图片不会修改，客户端缓存起来，一直从缓存获取
+	private String imageSmallURL;
+	private String imageOriginalURL;
+
 	private Long locationId; // 发表位置ID，位置不会修改，客户端缓存起来，一直从缓存获取
 
 	private List<CommentVO> comments = new ArrayList<CommentVO>(); // 评论列表
@@ -31,86 +35,6 @@ public class FeedVO extends BaseVO {
 
 	public FeedVO() {
 		super();
-	}
-
-	public FeedVO(Long id, Integer createdBy, Date createdOn, String text, Long imageId, Long locationId) {
-		super();
-		this.id = id;
-		this.createdBy = createdBy;
-		this.createdOn = createdOn;
-		this.text = text;
-		this.imageId = imageId;
-		this.locationId = locationId;
-	}
-
-	public FeedVO(Long id, Integer createdBy, Date createdOn, String text, Long imageId, Long locationId,
-			boolean favored) {
-		super();
-		this.id = id;
-		this.createdBy = createdBy;
-		this.createdOn = createdOn;
-		this.text = text;
-		this.imageId = imageId;
-		this.locationId = locationId;
-		this.favored = favored;
-	}
-
-	public FeedVO(Long id, Integer createdBy, Date createdOn, String text, Long imageId, Long locationId,
-			int commentCount, int favorCount) {
-		super();
-		this.id = id;
-		this.createdBy = createdBy;
-		this.createdOn = createdOn;
-		this.text = text;
-		this.imageId = imageId;
-		this.locationId = locationId;
-		this.commentCount = commentCount;
-		this.favorCount = favorCount;
-	}
-
-	public FeedVO(Long id, Integer createdBy, Date createdOn, String text, Long imageId, Long locationId,
-			int commentCount, int favorCount, boolean favored) {
-		super();
-		this.id = id;
-		this.createdBy = createdBy;
-		this.createdOn = createdOn;
-		this.text = text;
-		this.imageId = imageId;
-		this.locationId = locationId;
-		this.commentCount = commentCount;
-		this.favorCount = favorCount;
-		this.favored = favored;
-	}
-
-	public FeedVO(Long id, Integer createdBy, Date createdOn, String text, Long imageId, Long locationId,
-			List<CommentVO> comments, List<FeedFavorVO> favors, int commentCount, int favorCount) {
-		super();
-		this.id = id;
-		this.createdBy = createdBy;
-		this.createdOn = createdOn;
-		this.text = text;
-		this.imageId = imageId;
-		this.locationId = locationId;
-		this.comments = comments;
-		this.favors = favors;
-		this.commentCount = commentCount;
-		this.favorCount = favorCount;
-	}
-
-	public FeedVO(Long id, Integer createdBy, Date createdOn, String text, Long imageId, Long locationId,
-			List<CommentVO> comments, List<FeedFavorVO> favors, int commentCount, int favorCount, boolean favored) {
-		super();
-		this.id = id;
-		this.createdBy = createdBy;
-		this.createdOn = createdOn;
-		this.text = text;
-		this.imageId = imageId;
-		this.locationId = locationId;
-		this.comments = comments;
-		this.favors = favors;
-		this.commentCount = commentCount;
-		this.favorCount = favorCount;
-		this.favored = favored;
 	}
 
 	public Long getId() {
@@ -145,12 +69,20 @@ public class FeedVO extends BaseVO {
 		this.text = text;
 	}
 
-	public Long getImageId() {
-		return imageId;
+	public String getImageSmallURL() {
+		return imageSmallURL;
 	}
 
-	public void setImageId(Long imageId) {
-		this.imageId = imageId;
+	public void setImageSmallURL(String imageSmallURL) {
+		this.imageSmallURL = imageSmallURL;
+	}
+
+	public String getImageOriginalURL() {
+		return imageOriginalURL;
+	}
+
+	public void setImageOriginalURL(String imageOriginalURL) {
+		this.imageOriginalURL = imageOriginalURL;
 	}
 
 	public Long getLocationId() {
