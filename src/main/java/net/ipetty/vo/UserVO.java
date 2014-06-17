@@ -14,6 +14,7 @@ public class UserVO extends BaseVO {
 	private String email; // 邮箱地址
 	private String nickname; // 昵称
 	private String avatar; // 头像
+	private String background; // 背景图片
 	private String gender; // 性别
 	private String stateAndRegion; // 地区
 	private String signature; // 个性签名
@@ -69,6 +70,14 @@ public class UserVO extends BaseVO {
 
 	public void setAvatar(String avatar) {
 		this.avatar = avatar;
+	}
+
+	public String getBackground() {
+		return background;
+	}
+
+	public void setBackground(String background) {
+		this.background = background;
 	}
 
 	public String getGender() {
