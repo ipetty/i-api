@@ -68,7 +68,7 @@ public class Option {
 
     public String getIcon() {
         if (null == icon) {
-            return "";
+            return null;
         }
         return Constant.FILE_SERVER_BASE + icon;
     }
