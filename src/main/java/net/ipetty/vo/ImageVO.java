@@ -57,6 +57,9 @@ public class ImageVO extends BaseVO {
     }
 
     public String getSmallURL() {
+        if (null == smallURL) {
+            return "";
+        }
         return Constant.FILE_SERVER_BASE + smallURL;
     }
 
@@ -65,6 +68,9 @@ public class ImageVO extends BaseVO {
     }
 
     public String getCutURL() {
+        if (null == cutURL) {
+            return "";
+        }
         return Constant.FILE_SERVER_BASE + cutURL;
     }
 
@@ -73,6 +79,9 @@ public class ImageVO extends BaseVO {
     }
 
     public String getOriginalURL() {
+        if (null == originalURL) {
+            return "";
+        }
         return Constant.FILE_SERVER_BASE + originalURL;
     }
 
