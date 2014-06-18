@@ -65,10 +65,7 @@ public class UserVO extends BaseVO {
     }
 
     public String getAvatar() {
-        if (null == background) {
-            return null;
-        }
-        return Constant.FILE_SERVER_BASE + avatar;
+        return avatar;
     }
 
     public void setAvatar(String avatar) {
@@ -76,10 +73,7 @@ public class UserVO extends BaseVO {
     }
 
     public String getBackground() {
-        if (null == background) {
-            return null;
-        }
-        return Constant.FILE_SERVER_BASE + background;
+        return background;
     }
 
     public void setBackground(String background) {

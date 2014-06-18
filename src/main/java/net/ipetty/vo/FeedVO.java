@@ -70,10 +70,7 @@ public class FeedVO extends BaseVO {
     }
 
     public String getImageSmallURL() {
-        if (null == imageSmallURL) {
-            return null;
-        }
-        return Constant.FILE_SERVER_BASE + imageSmallURL;
+        return imageSmallURL;
     }
 
     public void setImageSmallURL(String imageSmallURL) {
@@ -81,10 +78,7 @@ public class FeedVO extends BaseVO {
     }
 
     public String getImageOriginalURL() {
-        if (null == imageOriginalURL) {
-            return null;
-        }
-        return Constant.FILE_SERVER_BASE + imageOriginalURL;
+        return imageOriginalURL;
     }
 
     public void setImageOriginalURL(String imageOriginalURL) {
