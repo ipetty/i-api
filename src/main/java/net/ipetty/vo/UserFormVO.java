@@ -1,7 +1,9 @@
 package net.ipetty.vo;
 
+import java.util.Date;
+
 /**
- * 用户注册/个人信息修改VO
+ * 修改用户个人信息VO
  * 
  * @author luocanfeng
  * @date 2014年5月4日
@@ -13,18 +15,10 @@ public class UserFormVO extends BaseVO {
 	private String gender; // 性别
 	private String stateAndRegion; // 地区
 	private String signature; // 个性签名
+	private Date birthday; // 生日
 
 	public UserFormVO() {
 		super();
-	}
-
-	public UserFormVO(Integer id, String nickname, String gender, String stateAndRegion, String signature) {
-		super();
-		this.id = id;
-		this.nickname = nickname;
-		this.gender = gender;
-		this.stateAndRegion = stateAndRegion;
-		this.signature = signature;
 	}
 
 	public Integer getId() {
@@ -65,6 +59,14 @@ public class UserFormVO extends BaseVO {
 
 	public void setSignature(String signature) {
 		this.signature = signature;
+	}
+
+	public Date getBirthday() {
+		return birthday;
+	}
+
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
 	}
 
 }

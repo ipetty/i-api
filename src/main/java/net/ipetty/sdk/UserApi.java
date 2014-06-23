@@ -3,6 +3,7 @@ package net.ipetty.sdk;
 import java.util.List;
 
 import net.ipetty.vo.RegisterVO;
+import net.ipetty.vo.UserFormVO;
 import net.ipetty.vo.UserVO;
 
 /**
@@ -106,5 +107,10 @@ public interface UserApi {
 	 * 更新个人空间背景图片
 	 */
 	public String updateBackground(String imagePath);
+
+	/**
+	 * 修改用户个人信息
+	 */
+	public UserVO update(UserFormVO userFormVo);
 
 }
