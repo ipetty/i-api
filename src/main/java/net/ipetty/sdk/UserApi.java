@@ -4,6 +4,7 @@ import java.util.List;
 
 import net.ipetty.vo.RegisterVO;
 import net.ipetty.vo.UserFormVO;
+import net.ipetty.vo.UserStatisticsVO;
 import net.ipetty.vo.UserVO;
 
 /**
@@ -38,6 +39,11 @@ public interface UserApi {
 	 * 根据ID获取用户帐号
 	 */
 	public UserVO getById(Integer id);
+
+	/**
+	 * 根据用户ID获取用户统计信息
+	 */
+	public UserStatisticsVO getUserStatisticsByUserId(Integer userId);
 
 	/**
 	 * 根据uid获取用户帐号
