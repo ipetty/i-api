@@ -1,5 +1,7 @@
 package net.ipetty.vo;
 
+import java.util.Date;
+
 import org.apache.commons.lang3.StringUtils;
 
 /**
@@ -20,6 +22,7 @@ public class UserVO extends BaseVO {
 	private String gender; // 性别
 	private String stateAndRegion; // 地区
 	private String signature; // 个性签名
+	private Date birthday; // 生日
 	private boolean followed; // 是否已关注
 
 	public UserVO() {
@@ -113,6 +116,14 @@ public class UserVO extends BaseVO {
 
 	public void setSignature(String signature) {
 		this.signature = signature;
+	}
+
+	public Date getBirthday() {
+		return birthday;
+	}
+
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
 	}
 
 	public boolean isFollowed() {
