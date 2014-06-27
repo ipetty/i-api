@@ -47,4 +47,9 @@ public interface PetApi {
 	 */
 	// public PetVO updateUniqueName(Integer id, String uniqueName);
 
+	/**
+	 * 更新宠物头像
+	 */
+	public String updateAvatar(String petId, String imagePath);
+
 }
