@@ -52,6 +52,15 @@ public interface FeedApi {
 	public List<FeedVO> listByTimelineForHomePage(Date timeline, int pageNumber, int pageSize);
 
 	/**
+	 * 根据时间线分页获取指定用户空间的消息
+	 * 
+	 * @param pageNumber
+	 *            分页页码，从0开始
+	 */
+	@Deprecated
+	public List<FeedVO> listByTimelineForSpace(Integer userId, Date timeline, int pageNumber, int pageSize);
+
+	/**
 	 * 根据时间线分页获取消息（广场）
 	 * 
 	 * @param pageNumber
@@ -66,6 +75,14 @@ public interface FeedApi {
 	 *            分页页码，从0开始
 	 */
 	public FeedList listByTimelineForHomePage(FeedTimelineQueryParams queryParams);
+
+	/**
+	 * 根据时间线分页获取指定用户空间的消息
+	 * 
+	 * @param pageNumber
+	 *            分页页码，从0开始
+	 */
+	public FeedList listByTimelineForSpace(FeedTimelineQueryParams queryParams);
 
 	/**
 	 * 获取指定消息的评论列表

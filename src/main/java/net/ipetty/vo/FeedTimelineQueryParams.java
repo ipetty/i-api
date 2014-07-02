@@ -11,6 +11,7 @@ import java.util.List;
  */
 public class FeedTimelineQueryParams extends BaseVO {
 
+	private Integer userId; // 查询个人空间时才会用到
 	private Date timeline;
 	private List<CachedUserVersion> cachedUserVersions;
 	private int pageNumber;
@@ -27,6 +28,24 @@ public class FeedTimelineQueryParams extends BaseVO {
 		this.cachedUserVersions = cachedUserVersions;
 		this.pageNumber = pageNumber;
 		this.pageSize = pageSize;
+	}
+
+	public FeedTimelineQueryParams(Integer userId, Date timeline, List<CachedUserVersion> cachedUserVersions,
+			int pageNumber, int pageSize) {
+		super();
+		this.userId = userId;
+		this.timeline = timeline;
+		this.cachedUserVersions = cachedUserVersions;
+		this.pageNumber = pageNumber;
+		this.pageSize = pageSize;
+	}
+
+	public Integer getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Integer userId) {
+		this.userId = userId;
 	}
 
 	public Date getTimeline() {
