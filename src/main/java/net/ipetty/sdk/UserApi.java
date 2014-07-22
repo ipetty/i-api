@@ -21,6 +21,11 @@ public interface UserApi {
 	public UserVO login(String username, String password);
 
 	/**
+	 * 使用第三方帐号登陆
+	 */
+	public UserVO login3rd(String platform, String userId);
+
+	/**
 	 * 登出
 	 */
 	public void logout();
