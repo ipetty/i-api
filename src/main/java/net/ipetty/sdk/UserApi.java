@@ -26,6 +26,11 @@ public interface UserApi {
 	public UserVO login3rd(String platform, String userId);
 
 	/**
+	 * 使用第三方帐号登陆或注册后登登陆返回
+	 */
+	public UserVO loginOrRegister3rd(String platform, String userId, String email, String userName);
+
+	/**
 	 * 登出
 	 */
 	public void logout();
