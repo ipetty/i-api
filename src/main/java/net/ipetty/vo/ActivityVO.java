@@ -13,6 +13,8 @@ public class ActivityVO extends BaseVO {
 	private Long id;
 	private String type; // ActivityType
 	private Long targetId; // 目标ID
+	private String feedImageUrl; // 目标是主题消息时的主题消息图片
+	private String content; // 内容，目前仅在回复事件时才有内容值
 	private Integer createdBy;
 	private Date createdOn;
 
@@ -25,6 +27,28 @@ public class ActivityVO extends BaseVO {
 		this.id = id;
 		this.type = type;
 		this.targetId = targetId;
+		this.createdBy = createdBy;
+		this.createdOn = createdOn;
+	}
+
+	public ActivityVO(Long id, String type, Long targetId, String content, Integer createdBy, Date createdOn) {
+		super();
+		this.id = id;
+		this.type = type;
+		this.targetId = targetId;
+		this.content = content;
+		this.createdBy = createdBy;
+		this.createdOn = createdOn;
+	}
+
+	public ActivityVO(Long id, String type, Long targetId, String feedImageUrl, String content, Integer createdBy,
+			Date createdOn) {
+		super();
+		this.id = id;
+		this.type = type;
+		this.targetId = targetId;
+		this.feedImageUrl = feedImageUrl;
+		this.content = content;
 		this.createdBy = createdBy;
 		this.createdOn = createdOn;
 	}
@@ -51,6 +75,22 @@ public class ActivityVO extends BaseVO {
 
 	public void setTargetId(Long targetId) {
 		this.targetId = targetId;
+	}
+
+	public String getFeedImageUrl() {
+		return feedImageUrl;
+	}
+
+	public void setFeedImageUrl(String feedImageUrl) {
+		this.feedImageUrl = feedImageUrl;
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
 	}
 
 	public Integer getCreatedBy() {

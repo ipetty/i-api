@@ -6,7 +6,7 @@ package net.ipetty.vo;
  * @author luocanfeng
  * @date 2014年5月9日
  */
-public class FeedFormVO {
+public class FeedFormVO extends BaseVO {
 
 	private String text; // 文本内容
 	private String imagePath; // 图片文件路径

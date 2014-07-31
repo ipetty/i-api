@@ -9,7 +9,7 @@ import java.util.Set;
  * @author luocanfeng
  * @date 2014年6月13日
  */
-public class OptionGroup {
+public class OptionGroup extends BaseVO {
 
 	public static final String HUMAN_GENDER = "human_gender"; // 性别
 	public static final String PET_GENDER = "pet_gender"; // 宠物性别

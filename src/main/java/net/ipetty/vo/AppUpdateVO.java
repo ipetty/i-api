@@ -6,7 +6,7 @@ package net.ipetty.vo;
  * @author luocanfeng
  * @date 2014年7月7日
  */
-public class AppUpdateVO {
+public class AppUpdateVO extends BaseVO {
 
 	private String appName; // 应用名
 	private String appKey; // 应用Key

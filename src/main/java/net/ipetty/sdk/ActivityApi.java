@@ -22,4 +22,19 @@ public interface ActivityApi {
 	 */
 	public List<ActivityVO> listRelatedActivities(int pageNumber, int pageSize);
 
+	/**
+	 * 获取新粉丝事件列表
+	 */
+	public List<ActivityVO> listNewFansActivities();
+
+	/**
+	 * 获取新回复事件列表
+	 */
+	public List<ActivityVO> listNewRepliesActivities();
+
+	/**
+	 * 获取新赞事件列表
+	 */
+	public List<ActivityVO> listNewFavorsActivities();
+
 }
