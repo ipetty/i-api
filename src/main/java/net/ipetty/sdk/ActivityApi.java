@@ -42,4 +42,9 @@ public interface ActivityApi {
 	 */
 	public List<ActivityVO> listNewActivities();
 
+	/**
+	 * 分页（包括历史时间列表）获取用户的新粉丝、新回复、新赞事件列表
+	 */
+	public List<ActivityVO> listNewActivities(int pageNumber, int pageSize);
+
 }
