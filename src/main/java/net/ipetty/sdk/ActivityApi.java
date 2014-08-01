@@ -37,4 +37,9 @@ public interface ActivityApi {
 	 */
 	public List<ActivityVO> listNewFavorsActivities();
 
+	/**
+	 * 获取用户的新粉丝、新回复、新赞事件列表
+	 */
+	public List<ActivityVO> listNewActivities();
+
 }
