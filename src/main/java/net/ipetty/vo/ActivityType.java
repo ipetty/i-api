@@ -12,6 +12,7 @@ public interface ActivityType {
 	public static final String LOGIN = "login"; // 登录
 	public static final String LOGOUT = "logout"; // 登出
 	public static final String SIGN_IN = "sign_in"; // 签到
+	public static final String UPDATE_EMAIL = "update_email";
 	public static final String UPDATE_UNIQUE_NAME = "update_un";
 	public static final String CHANGE_PASSWORD = "change_password";
 	public static final String UPDATE_AVATAR = "update_avatar";

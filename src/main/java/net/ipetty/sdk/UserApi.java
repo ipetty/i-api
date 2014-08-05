@@ -3,6 +3,7 @@ package net.ipetty.sdk;
 import java.util.List;
 
 import net.ipetty.vo.RegisterVO;
+import net.ipetty.vo.UserForm43rdVO;
 import net.ipetty.vo.UserFormVO;
 import net.ipetty.vo.UserStatisticsVO;
 import net.ipetty.vo.UserVO;
@@ -29,6 +30,11 @@ public interface UserApi {
 	 * 使用第三方帐号登陆或注册后登登陆返回
 	 */
 	public UserVO loginOrRegister3rd(String platform, String userId, String email, String userName);
+
+	/**
+	 * 使用第三方帐号注册后完善用户信息
+	 */
+	public UserVO improveUserInfo43rd(UserForm43rdVO userForm);
 
 	/**
 	 * 登出
