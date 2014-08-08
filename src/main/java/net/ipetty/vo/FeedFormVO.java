@@ -10,13 +10,13 @@ public class FeedFormVO extends BaseVO {
 
 	private String text; // 文本内容
 	private String imagePath; // 图片文件路径
-	private LocationFormVO location; // 位置信息
+	private LocationVO location; // 位置信息
 
 	public FeedFormVO() {
 		super();
 	}
 
-	public FeedFormVO(String text, String imagePath, LocationFormVO location) {
+	public FeedFormVO(String text, String imagePath, LocationVO location) {
 		super();
 		this.text = text;
 		this.imagePath = imagePath;
@@ -39,11 +39,11 @@ public class FeedFormVO extends BaseVO {
 		this.imagePath = imagePath;
 	}
 
-	public LocationFormVO getLocation() {
+	public LocationVO getLocation() {
 		return location;
 	}
 
-	public void setLocation(LocationFormVO location) {
+	public void setLocation(LocationVO location) {
 		this.location = location;
 	}
 

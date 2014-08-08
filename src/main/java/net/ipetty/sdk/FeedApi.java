@@ -24,6 +24,11 @@ public interface FeedApi {
 	public FeedVO publish(FeedFormVO feed);
 
 	/**
+	 * 发布消息（带地理位置信息）
+	 */
+	public FeedVO publishWithLocation(FeedFormVO feed);
+
+	/**
 	 * 根据ID获取消息
 	 */
 	public FeedVO getById(Long id);
