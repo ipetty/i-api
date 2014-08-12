@@ -21,6 +21,7 @@ public class FeedListItem extends BaseVO {
 	private String imageOriginalURL;
 
 	private Long locationId; // 发表位置ID
+	private LocationVO location; // 位置信息
 
 	private List<Integer> displayedFavorUsers; // 仅列出界面上要显示的几个已赞的用户
 	private List<CommentVO> displayedComments; // 仅列出界面上要显示的几个评论
@@ -89,6 +90,14 @@ public class FeedListItem extends BaseVO {
 
 	public void setLocationId(Long locationId) {
 		this.locationId = locationId;
+	}
+
+	public LocationVO getLocation() {
+		return location;
+	}
+
+	public void setLocation(LocationVO location) {
+		this.location = location;
 	}
 
 	public List<Integer> getDisplayedFavorUsers() {
