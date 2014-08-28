@@ -11,6 +11,7 @@ import java.util.Date;
 public class UserFormVO extends BaseVO {
 
 	private Integer id;
+	private String email; // 邮箱
 	private String nickname; // 昵称
 	private String gender; // 性别
 	private String stateAndRegion; // 地区
@@ -27,6 +28,14 @@ public class UserFormVO extends BaseVO {
 
 	public void setId(Integer id) {
 		this.id = id;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getNickname() {
